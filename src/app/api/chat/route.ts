@@ -9,7 +9,14 @@ export async function POST(req: Request) {
     const result = streamText({
       // model: anthropic("claude-sonnet-4-20250514"),
       model: openai("gpt-4.1-nano"),
-      messages: convertToModelMessages(messages),
+      messages: [
+        {
+          role: "system",
+          content:
+            "You are a helpful coding assistant. Keep responses under 3 sentences and focus on practical examples.",
+        },
+        ...convertToModelMessages(messages),
+      ],
     });
 
     // Voir les tokens utilisés après le streaming est terminé
