@@ -58,6 +58,7 @@ const MultiModalChatPage = () => {
                     />
                   );
                 }
+                // Pour les fichiers PDF
                 if (part.mediaType?.startsWith("application/pdf")) {
                   return (
                     <iframe
