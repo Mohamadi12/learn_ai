@@ -31,6 +31,7 @@ export async function POST(req: Request) {
       stopWhen: stepCountIs(2),
     });
 
+    // Voir les sources dont provient la réponse
     return result.toUIMessageStreamResponse({
       sendSources: true,
     });
