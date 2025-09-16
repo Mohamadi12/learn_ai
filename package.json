@@ -13,6 +13,7 @@
     "@ai-sdk/openai": "^2.0.5",
     "@ai-sdk/react": "^2.0.8",
     "@imagekit/next": "^2.1.3",
+    "@modelcontextprotocol/sdk": "^1.18.0",
     "ai": "^5.0.8",
     "imagekit": "^6.0.0",
     "next": "15.4.6",
